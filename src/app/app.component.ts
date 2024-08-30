@@ -1,20 +1,13 @@
 import { Component } from '@angular/core';
-import {MatButtonModule} from '@angular/material/button';
+import { RouterOutlet } from '@angular/router';
+
 @Component({
-  standalone: true,
-  imports: [MatButtonModule],
   selector: 'app-root',
-  template: `<div>
-    <section>
-  <div class="example-label">Basic</div>
-  <div class="example-button-row">
-    <button mat-button>Basic</button>
-    <button mat-button disabled>Disabled</button>
-    <a mat-button href="https://www.google.com/" target="_blank">Link</a>
-  </div>
-</section>
-  </div>`,
+  standalone: true,
+  imports: [RouterOutlet],
+  templateUrl: './app.component.html',
+  styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  value = 'baby babu';
+  title = 'website';
 }
